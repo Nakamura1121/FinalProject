@@ -4,7 +4,9 @@ body {
   
   .App {
     text-align: center;
-    padding: 20px;
+    background-color: green;
+
+
   }
   
   form {
@@ -29,5 +31,12 @@ body {
     .App {
       padding: 10px;
     }
+  }
+
+  .App {
+background-color: black;
+  }
+  .dark-mode{
+  background-color: white;  
   }
   

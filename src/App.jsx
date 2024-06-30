@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import AppRoutes from './routes';
+import { Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
 import './styles/main.scss';
+import Product from './pages/products'
+
+
+
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? 'App dark-mode' : 'App'}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        Toggle Dark Mode
-      </button>
-      <AppRoutes />
+    <div>
+      <Navbar/>
+      <Routes>
+      <Route path="/products" element={<Product />}/>
+    </Routes>
     </div>
+    
   );
 };
 
