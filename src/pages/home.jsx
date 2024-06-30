@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
         return (
@@ -11,7 +12,7 @@ const Home = () => {
                 <div className="w-full md:w-1/2 prose">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus magna, dictum quis augue vitae, tincidunt lacinia lorem. Integer at laoreet sem. Donec non eros et magna aliquam fringilla. Pellentesque euismod magna eu nibh hendrerit consectetur.</p>
                   <p>Proin eget tortor risus. Donec euismod velit eget magna pharetra aliquam. Sed posuere consectetur est at lobortis. Maecenas sed diam eget turpis varius tempor.</p>
-                  <a href="/products" className="inline-block px-4 py-2 mt-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Learn More</a>
+                  <Link to="/products" className="inline-block px-4 py-2 mt-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Learn More</Link>
                 </div>
               </section>
       
